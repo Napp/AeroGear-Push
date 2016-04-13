@@ -15,7 +15,7 @@ namespace Napp\AeroGearPush\Request;
  *
  * @package Napp\AeroGearPush\Request
  */
-class CreateIosVariantRequest extends abstractApplicationRequest
+class CreateIosVariantRequest extends AbstractApplicationRequest
 {
     /**
      * @var

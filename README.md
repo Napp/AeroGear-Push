@@ -256,6 +256,9 @@ json
 
 ## Changelog 
 
+* 1.0.1
+    * Fixed wrong casing for "AbstractApplicationRequest"
+
 * 1.0
     * init
 

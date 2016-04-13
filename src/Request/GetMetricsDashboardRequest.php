@@ -17,7 +17,7 @@ namespace Napp\AeroGearPush\Request;
  *
  * @package Napp\AeroGearPush\Request
  */
-class GetMetricsDashboardRequest extends abstractApplicationRequest
+class GetMetricsDashboardRequest extends AbstractApplicationRequest
 {
     /**
      * @var

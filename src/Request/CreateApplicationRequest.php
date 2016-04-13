@@ -15,7 +15,7 @@ namespace Napp\AeroGearPush\Request;
  *
  * @package Napp\AeroGearPush\Request
  */
-class CreateApplicationRequest extends abstractApplicationRequest
+class CreateApplicationRequest extends AbstractApplicationRequest
 {
     /**
      * createApplicationRequest constructor.

@@ -17,7 +17,7 @@ use Napp\AeroGearPush\Exception\AeroGearAuthErrorException;
  *
  * @package Napp\AeroGearPush\Request
  */
-class GetApplicationRequest extends abstractApplicationRequest
+class GetApplicationRequest extends AbstractApplicationRequest
 {
     /**
      * GetApplicationRequest constructor.

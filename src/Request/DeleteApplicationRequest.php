@@ -15,7 +15,7 @@ namespace Napp\AeroGearPush\Request;
  *
  * @package Napp\AeroGearPush\Request
  */
-class DeleteApplicationRequest extends abstractApplicationRequest
+class DeleteApplicationRequest extends AbstractApplicationRequest
 {
     /**
      * DeleteApplicationRequest constructor.

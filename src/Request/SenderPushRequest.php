@@ -15,7 +15,7 @@ namespace Napp\AeroGearPush\Request;
  *
  * @package Napp\AeroGearPush\Request
  */
-class SenderPushRequest extends abstractApplicationRequest
+class SenderPushRequest extends AbstractApplicationRequest
 {
     /**
      * @var

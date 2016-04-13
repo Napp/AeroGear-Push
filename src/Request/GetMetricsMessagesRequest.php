@@ -17,7 +17,7 @@ namespace Napp\AeroGearPush\Request;
  *
  * @package Napp\AeroGearPush\Request
  */
-class GetMetricsMessagesRequest extends abstractApplicationRequest
+class GetMetricsMessagesRequest extends AbstractApplicationRequest
 {
     /**
      * GetMetricsMessagesRequest constructor.

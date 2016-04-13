@@ -15,7 +15,7 @@ namespace Napp\AeroGearPush\Request;
  *
  * @package Napp\AeroGearPush\Request
  */
-class GetSysInfoHealthRequest extends abstractApplicationRequest
+class GetSysInfoHealthRequest extends AbstractApplicationRequest
 {
     /**
      * GetSysInfoHealthRequest constructor.
