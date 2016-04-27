@@ -11,7 +11,7 @@
 namespace Napp\AeroGearPush\Request;
 
 /**
- * Class dDleteApplicationRequest
+ * Class DeleteApplicationRequest
  *
  * @package Napp\AeroGearPush\Request
  */
