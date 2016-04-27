@@ -77,7 +77,7 @@ class CurlClient
         }
 
         // Set datatype, whether it's a file upload or json
-        if (isset($data['certificate'])) {
+        if (isset($data['certificate']) || isset($data['file'])) {
             $dataType = 'multipart';
             foreach ($data as $key => $value) {
                 $data[] = [

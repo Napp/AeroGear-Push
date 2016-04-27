@@ -23,6 +23,7 @@ use Napp\AeroGearPush\Request\GetMetricsDashboardRequest;
 use Napp\AeroGearPush\Request\GetMetricsMessagesRequest;
 use Napp\AeroGearPush\Request\GetSysInfoHealthRequest;
 use Napp\AeroGearPush\Request\SenderPushRequest;
+use Napp\AeroGearPush\Request\RegistryDeviceImporterRequest;
 
 /**
  * Class AeroGearPush
@@ -489,6 +490,32 @@ class AeroGearPush
           ]
         );
 
+        return $response;
+    }
+
+    /**
+     * @param RegistryDeviceImporterRequest $request
+     * @return \Psr\Http\Message\StreamInterface
+     * @throws AeroGearPushException
+     * @throws Exception\AeroGearAuthErrorException
+     * @throws Exception\AeroGearBadRequestException
+     * @throws Exception\AeroGearNotFoundException
+     */
+    public function registryDeviceImporter(RegistryDeviceImporterRequest $request)
+    {
+        // API endpoint requires tokens to be a multipart form upload
+        $data = ['file' => $request->data['tokens']];
+        $auth = $request->auth;
+        $response = $this->curlClient->call(
+            $request->method,
+            $this->serverUrl,
+            $request->endpoint,
+            $auth,
+            $data,
+            [
+                'verifySSL' => false,
+            ]
+        );
         return $response;
     }
 }
