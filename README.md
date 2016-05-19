@@ -221,7 +221,7 @@ json
 ```setPerPage() # integer```
 
 ##### Response
-The response is handled by '''metricsMessages()```
+The response is handled by ```metricsMessages()```
 
 ##### Return type
 json
@@ -256,8 +256,13 @@ json
 
 ## Changelog 
 
+
+* 1.0.2
+	* Added bulk import of device tokens
+	* Bugfix: typo
+
 * 1.0.1
-    * Fixed wrong casing for "AbstractApplicationRequest"
+    * Fixed wrong casing for `AbstractApplicationRequest`
 
 * 1.0
     * init
