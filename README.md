@@ -7,7 +7,7 @@ A library which integrates with the the [Redhat Aerogear Unified Push](https://a
 
 ### Composer
 
-    $ composer require napp/aero-gear-push
+    $ composer require napp/aerogear-push
 
 
 ## Keycloak oauth token usage
