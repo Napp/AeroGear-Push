@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/php:7.1.5-browsers
+      - image: notnoopci/php:7.1.5-browsers
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -18,20 +18,20 @@ jobs:
 
     steps:
       - checkout
-
+      - run: sudo apt install -y libsqlite3-dev
+      - run: composer self-update
       # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "composer.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+            - composer-v1-{{ checksum "composer.json" }}
+            - composer-v1-
 
       - run: composer install -n --prefer-dist
 
       - save_cache:
           paths:
             - ./vendor
-          key: v1-dependencies-{{ checksum "composer.json" }}
+          key: composer-v1-{{ checksum "composer.json" }}
 
       # run tests!
       - run: phpunit
